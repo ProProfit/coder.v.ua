@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Coder</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Coder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Mon, 27 Jun 2022 03:55:39 +0300</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>aaPanel</title>
+      <link>/tags/aapanel/</link>
+      <pubDate>Mon, 27 Jun 2022 03:55:39 +0300</pubDate>
+      
+      <guid>/tags/aapanel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tutorial</title>
+      <link>/tags/tutorial/</link>
+      <pubDate>Sun, 21 Nov 2021 15:35:32 +0200</pubDate>
+      
+      <guid>/tags/tutorial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>markdown</title>
+      <link>/tags/markdown/</link>
+      <pubDate>Wed, 14 Apr 2021 12:12:38 +0300</pubDate>
+      
+      <guid>/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>links</title>
+      <link>/tags/links/</link>
+      <pubDate>Sun, 21 Feb 2021 20:28:43 +0200</pubDate>
+      
+      <guid>/tags/links/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>youtube</title>
+      <link>/tags/youtube/</link>
+      <pubDate>Sat, 07 Nov 2020 11:04:10 +0200</pubDate>
+      
+      <guid>/tags/youtube/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phpshtorm</title>
+      <link>/tags/phpshtorm/</link>
+      <pubDate>Wed, 28 Oct 2020 14:24:33 +0200</pubDate>
+      
+      <guid>/tags/phpshtorm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sass</title>
+      <link>/tags/sass/</link>
+      <pubDate>Wed, 28 Oct 2020 14:24:33 +0200</pubDate>
+      
+      <guid>/tags/sass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>html</title>
+      <link>/tags/html/</link>
+      <pubDate>Wed, 28 Oct 2020 02:36:54 +0200</pubDate>
+      
+      <guid>/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tamples</title>
+      <link>/tags/tamples/</link>
+      <pubDate>Wed, 28 Oct 2020 02:36:54 +0200</pubDate>
+      
+      <guid>/tags/tamples/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>/tags/hugo/</link>
+      <pubDate>Wed, 28 Oct 2020 01:46:59 +0200</pubDate>
+      
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

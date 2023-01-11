@@ -1,0 +1,67 @@
+archetypeDir           = "archetypes"
+author                 = "ProCoder"
+baseUrl                = ""
+buildDrafts            = false
+relativeURLs           = true
+canonifyUrls           = true
+contentDir             = "content"
+languageCode           = "ru-ru"
+layoutDir              = "layouts"
+publishDir             = "public"
+theme                  = "pixyll"
+title                  = "Coder"
+enableEmoji            = true
+DefaultContentLanguage = "ru"
+#disqusShortname        = ""
+pygmentsUseClasses= true
+
+#Languages
+
+[Languages]
+
+[Languages.ru]
+weight = 2
+languageName = "Русский"
+languagedirection = "ru"
+[Languages.en]
+weight = 1
+languageName = "English"
+languagedirection = "en"
+
+[blackfriday]
+angledQuotes = true
+hrefTargetBlank = true
+
+[indexes]
+  category = "categories"
+  tag = "tags"
+  About = "about"
+  contact = "contact"
+[params]
+  mainSections = ["post"]
+  #subtitle = "Just another site" # Subtitle of your site
+  #google_analytics_id = ""
+  #twitter_username = "username"
+  paginate = 5
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.highlight]
+    anchorLineNos = true
+    codeFences = true
+    guessSyntax = true
+    hl_Lines = ""
+    lineAnchors = ""
+    lineNoStart = 12
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+#    style = "paraiso-dark"
+    tabWidth = 4
+  [markup.goldmark.parser.attribute]
+    title = true
+    block = true
+    safeMode = "unsafe"
+
+  # Date Format
+#dateformat = "2006.01.02"

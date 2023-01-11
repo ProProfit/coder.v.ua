@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>PhpShorm добавляем sass и выводим в нужную папку - Coder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="../../post/phpshorm_work_sass/">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="../../css/basscss.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/main.min.css" id="theme">
+  <link rel="stylesheet" type="text/css" href="../../css/chroma.css">
+  
+  
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+  
+
+
+</head>
+<body>
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+
+        
+        <a href="../../">Coder</a>
+        
+
+      <nav class="site-nav right"> <a href="../../about/">О себе</a>
+<a href="../../tags/">Теги</a>
+<a href="../../contact/">Контакты</a>
+
+
+
+<span class="lang-top">
+
+
+<a title="Русский" href="../../">Eng</a>
+
+
+</span>
+
+
+
+
+          
+          <button class="btnTheme" id="btnTheme"><img src="../../images/moon.png" alt=""></button>
+
+      </nav>
+
+      <div class="clearfix">/*заметки программиста*/</div>
+    </div>
+  </div>
+
+</header>
+
+
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">PhpShorm добавляем sass и выводим в нужную папку</h1> 
+        
+        <span class="post-meta">28.10.2020  </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <h2 id="phpshorm">PhpShorm</h2>
+<p>Немного того как мне удалось побороть sass, и заставить PhPShtorm компилить Sass в hugo</p>
+<h3 id="file-wather">File Wather</h3>
+<h3 id="sass">sass</h3>
+<p>Program <code>C:\Ruby27-x64\bin\sass</code></p>
+<p>Argument:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">--no-cache --update --sourcemap=none $FileName$:
+</span></span><span class="line"><span class="cl">$ProjectFileDir$/ путь к папке css /themes/NAME_THEME/static/css/
+</span></span><span class="line"><span class="cl">$FileNameWithoutExtension$.css`
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ProjectFileDir$/путь к папке css /themes/NAME_THEME/static/css/
+</span></span><span class="line"><span class="cl">$FileNameWithoutExtension$.css:
+</span></span><span class="line"><span class="cl">$FileNameWithoutExtension$.css.map
+</span></span></code></pre></div><p>Warking: <code>$FileDir$</code></p>
+<h3 id="sass-main">sass main</h3>
+<p>Program <code>C:\Ruby27-x64\bin\sass</code></p>
+<p>Argument:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">--style compressed --no-cache --update --sourcemap=none $FileName$:
+</span></span><span class="line"><span class="cl">$ProjectFileDir$/themes/NAME_THEME/static/css/
+</span></span><span class="line"><span class="cl">$FileNameWithoutExtension$.min.css
+</span></span></code></pre></div><p>Output:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">$ProjectFileDir$/themes/NAME_THEME/static/css/
+</span></span><span class="line"><span class="cl">$FileNameWithoutExtension$.min.css:
+</span></span><span class="line"><span class="cl">$FileNameWithoutExtension$.min.css.map
+</span></span></code></pre></div><p>Warking: <code>$FileDir$</code></p>
+<p><img src="https://i.ibb.co/SPVxHTs/phpshtorm-sass.jpg" alt="phpshorm_sass" title="phpshorm sass"></p>
+
+      </article>
+
+       
+      <p class="post-meta">Теги:&nbsp;
+        
+            
+            <a href="../../tags/sass">sass</a>
+        
+            ,&nbsp;
+            <a href="../../tags/phpshtorm">phpshtorm</a>
+        
+      </p>
+       
+
+      
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="../../index.xml"></a>
+
+</nav>
+
+          <small>
+              Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> Copyright &#169; 2021<br>
+
+
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+
+
+

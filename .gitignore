@@ -1,9 +1,9 @@
 *.swp
 *.swo
 
-hugo
-public/*
-content/*
-config.*
+# hugo
+# public/*
+# content/*
+# config.*
 exampleSite/public/
 .idea

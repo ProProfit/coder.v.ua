@@ -1,0 +1,443 @@
+@charset "UTF-8"
+
+//COLOR
+$bg: #2E3440
+$prime-color: #ECEFF4
+$border: #434C5E
+$colorLinks: #abb9cf
+
+
+html, body
+  height: 100%
+  background-color: $bg
+  color: $prime-color
+  font-family: 'Montserrat', sans-serif
+
+img
+  width: auto
+  max-width: 100%
+
+.site-wrap
+  min-height: 100%
+  margin-bottom: -120px
+  &:after
+    content: ""
+    display: block
+
+.footer, .site-wrap:after
+  height: 120px
+
+.gist, .highlight
+  .p
+    font-size: .75rem
+  .lines
+    width: 100%
+
+.site-header
+  a
+    color: #2E3440
+    font-weight: 300
+  & nav
+    a
+      font-size: 1rem
+      color: #666
+      &:hover
+        color: #D8DEE9
+        opacity: 1
+        border-bottom: 2px solid #D8DEE9
+
+.site-nav
+  margin: 0
+  padding: 0
+  a
+    margin-left: 1em
+
+.site-header a:hover,
+.posts .post a:hover .post-meta,
+.posts .post a:hover .post-title,
+.posts .post a:hover .post-summary
+  opacity: 0.88
+
+
+.related-post-title
+  border-bottom: thin solid $border
+
+
+.posts
+  margin: 0
+  .post
+    margin-bottom: 0.75em
+    padding-bottom: .375em
+    border-bottom: thin solid $border
+    &:last-child
+      border-bottom: none
+      margin-bottom: .375em
+      padding-bottom: 0
+
+
+.post-link .post-title
+  margin-top: 0
+  font-weight: 600
+  color: $prime-color
+
+
+.post-footer
+  font-style: italic
+  margin-top: .75rem
+  text-align: center
+
+
+.post-footer .avatar
+  margin: 2rem 0
+  width: 100px
+  border-radius: 50%
+
+
+.pagination, .button
+  font-size: 1rem
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif
+  font-weight: 300
+  text-align: center
+
+
+.pagination a, .pagination .disabled
+  -webkit-transition: all 0.2s ease-in-out
+  -moz-transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out
+  background: #3B4252
+  border-radius: 0.1875em
+  border: 1px solid $border
+  color: #ECEFF4
+  padding: 1em 1.5em
+
+.pagination .disabled
+  opacity: 0.5
+
+
+.pagination
+  a:hover,
+  a:focus
+    background: #4C566A
+    color: $prime-color
+  a:active
+    background: #4C566A
+
+.wrap
+  .measure
+    margin: 0 auto
+    a
+      color: $colorLinks
+      font-weight: 400
+      &:hover
+        background: #3B4252
+
+.clearfix
+  color: #c7c7c7
+
+.meta
+  .post-meta
+    width: auto
+    font-weight: 300
+    margin: 0
+    padding: .25em 0
+    color: #7a7a7a
+    font-style: italic
+
+.pagination .button
+  font-size: 1rem
+  font-weight: 300
+  letter-spacing: 1px
+
+
+.button-disabled
+  opacity: 0.55
+  background-color: #999
+  &:hover,
+  &:active,
+  &:focus
+    cursor: not-allowed
+    background-color: #999
+
+
+form
+  font-family: sans-serif
+  font-weight: 300
+  font-size: 1rem
+
+textarea.input
+  height: 8em
+
+p
+  font-weight: 300
+  line-height: 1.5
+  color: $prime-color
+
+abbr
+  border-bottom: 1px black dotted
+  cursor: help
+
+
+blockquote
+  padding: 1.33em
+  font-style: italic
+  border-left: 5px solid #7a7a7a
+  footer
+    font-size: .85rem
+    font-style: normal
+    background-color: #3B4252
+    color: $prime-color
+    border-color: $prime-color
+
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6
+  font-family: "Ubuntu", "PT Serif", Georgia, "Times New Roman", serif
+  font-weight: 900
+  line-height: 1.2
+  margin: 0.414em 0 0.5em
+
+
+.social-icons
+  padding: 0.5em 0 0 0
+  font-size: 1.25rem
+  width: 100%
+  a.fa
+    padding: 0.2em
+    opacity: 0.8
+    cursor: pointer
+    &:hover
+      opacity: 1
+
+.social-icons iframe[title=Flattr]
+  position: relative
+  top: 0.1em
+
+
+@media screen and (min-width: 48em)
+  .site-header .site-title
+    float: left
+  .meta,
+  .post-meta
+    margin: 0
+    padding: 0
+    font-size: 12px
+  .h1, h1
+    font-size: 38px
+
+  .h2, h2
+    font-size: 38px
+
+  .h3, h3
+    font-size: 18px
+
+  .h4, h4
+    font-size: 16px
+  .p, p, li
+      font-size: 16px
+      line-height: 1.8
+  .small
+    font-size: 1rem
+
+  .post-link .post-title
+    margin-top: 0.5em
+
+  .posts .post
+    margin-bottom: 1.333em
+    padding-bottom: 0.666em
+    border-bottom: thin solid $border
+
+  .posts .post:last-child
+    border-bottom: none
+    margin-bottom: .333em
+    padding-bottom: 0
+
+@media screen and (max-width: 48em)
+
+  .site-header
+    text-align: center
+    .site-title
+      float: center
+    .site-nav
+      width: 100%
+      float: left
+      text-align: center
+      margin-top: 0.666em
+      margin-bottom: 1.333em
+
+  .social-icons
+    .left
+    .right
+      text-align: center
+      float: none
+
+@media screen and (min-width: 64em)
+  .posts .post-meta .post-author
+    padding-bottom: .2em
+
+  .post-link .post-title
+    margin-top: .125em
+
+  .posts .post
+    margin-bottom: 2.666em
+    padding-bottom: 1.333em
+    border-bottom: thin solid $border
+    &:last-child
+      border-bottom: none
+      margin-bottom: .666em
+      padding-bottom: 0
+
+@media screen and (max-width: 900px)
+  .highlight
+    pre, code
+      &[class*="language-"]:before
+        visibility: hidden
+
+
+//FOOTER
+
+footer
+  border-top: thin solid #434C5E
+  .wrap
+    color: $prime-color
+    background-color: #3B4252
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, sans-serif
+    font-weight: 300
+    clear: both
+    &:after
+      content: ""
+      display: block
+
+//Icons.css
+//Licensed under the MIT license - http://opensource.org/license/MIT
+
+.icons
+  a
+    display: inline-block
+    width: 24px
+    height: 24px
+    margin: 10px
+    vertical-align: middle
+    -o-transition: all .3s
+    -moz-transition: all .3s
+    -webkit-transition: all .3s
+    -ms-transition: all .3s
+    .rss
+      background: url(../images/icons/rss.png) left top no-repeat
+    .twitter
+      background: url(../images/icons/twitter.png) left top no-repeat
+
+//Animate.css - http://daneden.me/animate
+//Licensed under the MIT license - http://opensource.org/licenses/MIT
+//
+//Copyright (c) 2014 Daniel Eden
+
+.animated
+  -webkit-animation-duration: 1s
+  animation-duration: 1s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+  .infinite
+    -webkit-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+  .hinge
+    -webkit-animation-duration: 2s
+    animation-duration: 2s
+
+@-webkit-keyframes fadeInDown
+  0%
+    opacity: 0
+    -webkit-transform: translateY(-20px)
+    transform: translateY(-20px)
+
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0)
+    transform: translateY(0)
+
+@keyframes fadeInDown
+  0%
+    opacity: 0
+    -webkit-transform: translateY(-20px) translate3d(0, 0, 0)
+    -ms-transform: translateY(-20px) translate3d(0, 0, 0)
+    transform: translateY(-20px) translate3d(0, 0, 0)
+  100%
+    opacity: 1
+    -webkit-transform: translateY(0) translate3d(0, 0, 0)
+    -ms-transform: translateY(0) translate3d(0, 0, 0)
+    transform: translateY(0) translate3d(0, 0, 0)
+
+.fade-in-down
+  -webkit-animation-name: fadeInDown
+  animation-name: fadeInDown
+
+/* Pagination */
+.paginatin_area
+  margin: 0
+  overflow: hidden
+  padding: 4px 0 94px
+  text-align: center
+  ul
+    display: inline-block
+    list-style: none outside none
+    margin: 0
+    overflow: hidden
+    padding: 0
+    text-align: center
+    li
+      display: block
+      float: left
+      margin: 0
+      padding: 0
+      a
+        background: none repeat scroll 0 0 #262626
+        border-radius: 4px
+        color: #fff
+        display: block
+        font-family: lato
+        font-size: 14px
+        font-weight: 900
+        line-height: 17px
+        margin: 2px
+        min-height: 30px
+        min-width: 30px
+        padding: 6px
+        text-decoration: none
+        -moz-transition: all .4s
+        -webkit-transition: all .4s
+        -ms-transition: all .4s
+        -o-transition: all .4s
+        transition: all .4s
+      .active a
+        background: #b3b3b1
+      &:hover
+        background: #b3b3b1
+
+      a:hover
+        background: #37C392
+// .paginatin_area ul li a i
+
+.p_arrow
+  i
+    display: block
+    font-family: lato
+    font-size: 1rem
+    font-style: normal
+    font-weight: 900
+    line-height: 12px
+    margin: 0
+    padding: 0
+    text-align: center
+.highlight
+  pre, code
+    background-color: #4C566A !important
+    color: #ECEFF4 !important
+code
+  background-color: #4C566A
+  color: #ECEFF4
+
+.btnTheme
+  background: none
+  cursor: pointer
+  border: none
+  img
+    vertical-align: middle
+

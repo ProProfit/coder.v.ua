@@ -1,0 +1,175 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Coder on Coder </title>
+      <generator uri="https://gohugo.io">Hugo</generator>
+    <link>/</link>
+    <language>ru-ru</language>
+    
+    
+    <updated>Mon, 27 Jun 2022 03:55:39 EEST</updated>
+    
+    <item>
+      <title>Команды bt в aaPanel</title>
+      <link>/post/aapanel-bt-command/</link>
+      <pubDate>Mon, 27 Jun 2022 03:55:39 EEST</pubDate>
+      
+      <guid>/post/aapanel-bt-command/</guid>
+      <description>aaPanel Management script Stop
+service bt stop
+Start
+service bt start
+Restart
+service bt restart
+Uninstall
+service bt stop &amp;amp;&amp;amp; chkconfig --del bt &amp;amp;&amp;amp; rm -f /etc/init.d/bt &amp;amp;&amp;amp; rm -rf /www/server/panel
+View current port of control panel
+cat /www/server/panel/data/port.pl
+Change port of control panel，e.g. 8881（centos 6 Operation System）
+echo &#39;8881&#39; &amp;gt; /www/server/panel/data/port.pl &amp;amp;&amp;amp; service bt restart iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT service iptables save service iptables restart</description>
+    </item>
+    
+    <item>
+      <title>Бесплатные Фотостоки</title>
+      <link>/post/free_photo_bank/</link>
+      <pubDate>Sun, 21 Nov 2021 15:59:18 EET</pubDate>
+      
+      <guid>/post/free_photo_bank/</guid>
+      <description>Скачать фотографии, видео stocksnap.io
+pexels.com
+lifeofpix.com
+isorepublic.com
+kaboompics.com
+stockvault.net
+shopify.com
+focastock.com
+
+Загрузить изображение в интернет. magebam.com
+imgbb.com
+files.fm</description>
+    </item>
+    
+    <item>
+      <title>Tutorial</title>
+      <link>/post/tutorial/</link>
+      <pubDate>Sun, 21 Nov 2021 15:35:32 EET</pubDate>
+      
+      <guid>/post/tutorial/</guid>
+      <description>Сайты с доками Metanit.com - Данный сайт посвящен различным языкам и технологиям программирования, компьютерам, мобильным платформам и ИТ-технологиям. [C#, Java, Web, Python, C++, MongoDB, Go, Vb.net, Swift, Kotlin, Dart, Php, Rust]
+professorweb.ru - Уроки по C# и платформе .NET Framework [C#, .NET]
+hcdev - Справочник [HTML, CSS, JS, Angular, React React, Node.js, Python 3, XSLT]
+
+Интерактивное обучение w3schools.com
+codechick.io - был создан, чтобы с помощью упражнений натренировать вас думать как программист.</description>
+    </item>
+    
+    <item>
+      <title>Markdown</title>
+      <link>/post/markdown/</link>
+      <pubDate>Wed, 14 Apr 2021 12:12:38 EEST</pubDate>
+      
+      <guid>/post/markdown/</guid>
+      <description>Заголовки # H1 ## H2 ### H3 #### H4 ##### H5 ###### H6 H1 H2 H3 H4 H5 H6  Выделение Выделение, или курсив, с *звездочками* или _Underscores_. Сильный акцент, он же полужирный, с **звездочками** или __underscores__. Комбинированное выделение **звездочками и _подчеркиванием _**. Зачеркнутый использует две тильды. ~~Поцарапайте это.~~ Выделение, иначе курсив, с звездочками или Underscores .
+Сильный акцент, он же полужирный, с звездочками или underscores.
+Комбинированное выделение звездочками и подчеркиванием.</description>
+    </item>
+    
+    <item>
+      <title>Одноразовый email</title>
+      <link>/post/free-maile/</link>
+      <pubDate>Tue, 13 Apr 2021 18:44:15 EEST</pubDate>
+      
+      <guid>/post/free-maile/</guid>
+      <description>Temp Mail - Временная почта - это отсутствие обязательств и рисков. Одноразовая почта от Temp Mail, избавит вас от спама и рекламных email рассылок. Одноразовая почта для анонимного использования предоставляется бесплатно.
+Mohmal.com
+tempmail.plus
+10minemail.com
+fex.plus - Анонимная почта FEX.PLUS – это бесплатный почтовый сервис без регистрации, защита от спама и простота в использовании. Для создания временного почтового ящика не нужны особые знания, а отсутствие регистрации обеспечивает анонимность владельцу. FEX.PLUS – это сервис современной и безопасной электронной почты.</description>
+    </item>
+    
+    <item>
+      <title>Полезные ссылки 💻 для веб-разработчика</title>
+      <link>/post/links_for_code/</link>
+      <pubDate>Sun, 21 Feb 2021 20:28:43 EET</pubDate>
+      
+      <guid>/post/links_for_code/</guid>
+      <description>Редакторы кода VisualStudio Code – Мощный редактор (FREE)
+Sublimetext 4 - Быстрый редактор кода. ($99 USD)
+Atom - От создателей GitHub (FREE)
+Notepad ++ - Древний редактор. (FREE)
+Песочницы для кода CodePen - Множество препроцессров, хорошая галерея снипетов и примеров
+Jsfiddle - Есть возможность реалтайм редактора для нескольких пользователей + чат
+Jsbin - Есть вывод из консоли
+SQL-academy - Учебник + Песочница по SQL
+Sqliteonline - Есть несколько языков СУБД</description>
+    </item>
+    
+    <item>
+      <title>Подборка каналов с интересным контентом</title>
+      <link>/post/kanalu_s_interesnym_kontentom/</link>
+      <pubDate>Sat, 07 Nov 2020 11:04:10 EET</pubDate>
+      
+      <guid>/post/kanalu_s_interesnym_kontentom/</guid>
+      <description>lore</description>
+    </item>
+    
+    <item>
+      <title>PhpShorm добавляем sass и выводим в нужную папку</title>
+      <link>/post/phpshorm_work_sass/</link>
+      <pubDate>Wed, 28 Oct 2020 14:24:33 EET</pubDate>
+      
+      <guid>/post/phpshorm_work_sass/</guid>
+      <description>PhpShorm Немного того как мне удалось побороть sass, и заставить PhPShtorm компилить Sass в hugo
+File Wather sass Program C:\Ruby27-x64\bin\sass
+Argument:
+--no-cache --update --sourcemap=none $FileName$: $ProjectFileDir$/ путь к папке css /themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.css` Output:
+$ProjectFileDir$/путь к папке css /themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.css: $FileNameWithoutExtension$.css.map Warking: $FileDir$
+sass main Program C:\Ruby27-x64\bin\sass
+Argument:
+--style compressed --no-cache --update --sourcemap=none $FileName$: $ProjectFileDir$/themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.min.css Output:
+$ProjectFileDir$/themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.min.css: $FileNameWithoutExtension$.min.css.map Warking: $FileDir$</description>
+    </item>
+    
+    <item>
+      <title>Стартовые шаблоны</title>
+      <link>/post/start_temples/</link>
+      <pubDate>Wed, 28 Oct 2020 02:36:54 EET</pubDate>
+      
+      <guid>/post/start_temples/</guid>
+      <description>Мои стартовые щаблон HTML - Чистый OLD стиль 1 ссылка
+Sass 2
+Gulp 3</description>
+    </item>
+    
+    <item>
+      <title>Подсветка синтаксис для Hugo</title>
+      <link>/post/podsvetka_sintaksisa/</link>
+      <pubDate>Wed, 28 Oct 2020 01:46:59 EET</pubDate>
+      
+      <guid>/post/podsvetka_sintaksisa/</guid>
+      <description>Chroma Style Gallery Chroma Style Gallery
+&amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt; wwww
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul { margin-top: 0; margin-bottom: 1rem; } button, input, select, textarea { font-family: inherit; font-size: 100%; fsdfsdf &amp;lt;section id=&amp;#34;main&amp;#34;&amp;gt; &amp;lt;div&amp;gt; &amp;lt;h1 id=&amp;#34;title&amp;#34;&amp;gt;{{ .Title }}&amp;lt;/h1&amp;gt; {{ range .Pages }} {{ .Render &amp;#34;summary&amp;#34;}} {{ end }} &amp;lt;/div&amp;gt; &amp;lt;/section&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>Контакты</title>
+      <link>/contact/</link>
+      <pubDate>Sun, 09 Nov 2014 13:49:44 &#43;0400</pubDate>
+      
+      <guid>/contact/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>О себе</title>
+      <link>/about/</link>
+      <pubDate>Sat, 08 Nov 2014 16:42:18 &#43;0400</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Пару слов о проекте.
+Заметки программиста</description>
+    </item>
+    
+  </channel>
+</rss>
+

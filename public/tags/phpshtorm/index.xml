@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>phpshtorm on Coder</title>
+    <link>/tags/phpshtorm/</link>
+    <description>Recent content in phpshtorm on Coder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Wed, 28 Oct 2020 14:24:33 +0200</lastBuildDate><atom:link href="/tags/phpshtorm/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PhpShorm добавляем sass и выводим в нужную папку</title>
+      <link>/post/phpshorm_work_sass/</link>
+      <pubDate>Wed, 28 Oct 2020 14:24:33 +0200</pubDate>
+      
+      <guid>/post/phpshorm_work_sass/</guid>
+      <description>PhpShorm Немного того как мне удалось побороть sass, и заставить PhPShtorm компилить Sass в hugo
+File Wather sass Program C:\Ruby27-x64\bin\sass
+Argument:
+--no-cache --update --sourcemap=none $FileName$: $ProjectFileDir$/ путь к папке css /themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.css` Output:
+$ProjectFileDir$/путь к папке css /themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.css: $FileNameWithoutExtension$.css.map Warking: $FileDir$
+sass main Program C:\Ruby27-x64\bin\sass
+Argument:
+--style compressed --no-cache --update --sourcemap=none $FileName$: $ProjectFileDir$/themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.min.css Output:
+$ProjectFileDir$/themes/NAME_THEME/static/css/ $FileNameWithoutExtension$.min.css: $FileNameWithoutExtension$.min.css.map Warking: $FileDir$</description>
+    </item>
+    
+  </channel>
+</rss>

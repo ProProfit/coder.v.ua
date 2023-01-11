@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tutorial on Coder</title>
+    <link>/tags/tutorial/</link>
+    <description>Recent content in tutorial on Coder</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru-ru</language>
+    <lastBuildDate>Sun, 21 Nov 2021 15:35:32 +0200</lastBuildDate><atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tutorial</title>
+      <link>/post/tutorial/</link>
+      <pubDate>Sun, 21 Nov 2021 15:35:32 +0200</pubDate>
+      
+      <guid>/post/tutorial/</guid>
+      <description>Сайты с доками Metanit.com - Данный сайт посвящен различным языкам и технологиям программирования, компьютерам, мобильным платформам и ИТ-технологиям. [C#, Java, Web, Python, C++, MongoDB, Go, Vb.net, Swift, Kotlin, Dart, Php, Rust]
+professorweb.ru - Уроки по C# и платформе .NET Framework [C#, .NET]
+hcdev - Справочник [HTML, CSS, JS, Angular, React React, Node.js, Python 3, XSLT]
+
+Интерактивное обучение w3schools.com
+codechick.io - был создан, чтобы с помощью упражнений натренировать вас думать как программист.</description>
+    </item>
+    
+  </channel>
+</rss>

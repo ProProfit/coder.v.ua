@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Markdown - Coder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="../../post/markdown/">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="../../css/basscss.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/main.min.css" id="theme">
+  <link rel="stylesheet" type="text/css" href="../../css/chroma.css">
+  
+  
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+  
+
+
+</head>
+<body>
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+
+        
+        <a href="../../">Coder</a>
+        
+
+      <nav class="site-nav right"> <a href="../../about/">О себе</a>
+<a href="../../tags/">Теги</a>
+<a href="../../contact/">Контакты</a>
+
+
+
+<span class="lang-top">
+
+
+<a title="Русский" href="../../">Eng</a>
+
+
+</span>
+
+
+
+
+          
+          <button class="btnTheme" id="btnTheme"><img src="../../images/moon.png" alt=""></button>
+
+      </nav>
+
+      <div class="clearfix">/*заметки программиста*/</div>
+    </div>
+  </div>
+
+</header>
+
+
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">Markdown</h1> 
+        
+        <span class="post-meta">14.04.2021  </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <h3 id="заголовки">Заголовки</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="gh"># H1
+</span></span></span><span class="line"><span class="cl"><span class="gh"></span><span class="gu">## H2
+</span></span></span><span class="line"><span class="cl"><span class="gu">### H3
+</span></span></span><span class="line"><span class="cl"><span class="gu">#### H4
+</span></span></span><span class="line"><span class="cl"><span class="gu">##### H5
+</span></span></span><span class="line"><span class="cl"><span class="gu">###### H6
+</span></span></span></code></pre></div><h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<hr>
+<h3 id="выделение">Выделение</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Выделение, или курсив, с <span class="ge">*звездочками*</span> или <span class="ge">_Underscores_</span>.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Сильный акцент, он же полужирный, с <span class="gs">**звездочками**</span> или <span class="gs">__underscores__</span>.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Комбинированное выделение <span class="gs">**звездочками и _подчеркиванием _**</span>.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Зачеркнутый использует две тильды. <span class="gd">~~Поцарапайте это.~~</span>
+</span></span></code></pre></div><p>Выделение, иначе курсив, с <em>звездочками</em> или <em>Underscores</em> .</p>
+<p>Сильный акцент, он же полужирный, с <strong>звездочками</strong> или <strong>underscores</strong>.</p>
+<p>Комбинированное выделение <strong>звездочками и <em>подчеркиванием</em></strong>.</p>
+<p>Зачеркнутый использует две тильды. <del>Поцарапайте это.</del></p>
+<h3 id="ссылки">Ссылки</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">[<span class="nt">I&#39;m an inline-style link</span>](<span class="na">https://www.google.com</span>)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[<span class="nt">I&#39;m an inline-style link with title</span>](<span class="na">https://www.google.com &#34;Google&#39;s Homepage&#34;</span>)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[I&#39;m a reference-style link][Arbitrary case-insensitive reference text]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[<span class="nt">I&#39;m a relative reference to a repository file</span>](<span class="na">../blob/master/LICENSE</span>)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[You can use numbers for reference-style link definitions][1]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Or leave it empty and use the [link text itself].
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Some text to show that the reference links can follow later.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[arbitrary case-insensitive reference text]: https://www.mozilla.org
+</span></span><span class="line"><span class="cl">[1]: http://slashdot.org
+</span></span><span class="line"><span class="cl">[link text itself]: http://www.reddit.com
+</span></span></code></pre></div><p><a href="https://www.google.com">Я ссылка</a></p>
+<p><a href="https://www.google.com" title="Google's Homepage">Я ссылка title</a></p>
+<p><a href="https://www.mozilla.org">I&rsquo;m a reference-style link</a></p>
+<p><a href="../blob/master/LICENSE">I&rsquo;m a relative reference to a repository file</a></p>
+<p><a href="http://slashdot.org">You can use numbers for reference-style link definitions</a></p>
+<p>Or leave it empty and use the <a href="http://www.reddit.com">link text itself</a>.</p>
+<p>URLs and URLs in angle brackets will automatically get turned into links.
+<a href="http://www.example.com">http://www.example.com</a> or <a href="http://www.example.com">http://www.example.com</a> and sometimes
+example.com (but not on Github, for example).</p>
+<p>Some text to show that the reference links can follow later.</p>
+<h3 id="images">Images</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Here&#39;s our logo (hover to see the title text):
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Inline-style: 
+</span></span><span class="line"><span class="cl">![<span class="nt">alt text</span>](<span class="na">https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &#34;Logo Title Text 1&#34;</span>)
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Reference-style: 
+</span></span><span class="line"><span class="cl">![alt text][logo]
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png &#34;Logo Title Text 2&#34;
+</span></span></code></pre></div><p>Here&rsquo;s our logo (hover to see the title text):</p>
+<p>Inline-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Reference-style:
+<img src="https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png" alt="alt text" title="Logo Title Text 2"></p>
+<h3 id="code-and-syntax-highlighting">Code and Syntax Highlighting</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kd">var</span> <span class="nx">s</span> <span class="o">=</span> <span class="s2">&#34;JavaScript syntax highlighting&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="nx">alert</span><span class="p">(</span><span class="nx">s</span><span class="p">);</span>
+</span></span></code></pre></div><p>OR</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;Python syntax highlighting&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span> <span class="n">s</span>
+</span></span></code></pre></div><p>No language indicated, so no syntax highlighting.
+But let&rsquo;s throw in a <!-- raw HTML omitted -->tag<!-- raw HTML omitted -->.</p>
+<h3 id="tables">Tables</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Colons can be used to align columns.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">| Tables        | Are           | Cool  |
+</span></span><span class="line"><span class="cl">| ------------- |:-------------:| -----:|
+</span></span><span class="line"><span class="cl">| col 3 is      | right-aligned | $1600 |
+</span></span><span class="line"><span class="cl">| col 2 is      | centered      |   $12 |
+</span></span><span class="line"><span class="cl">| zebra stripes | are neat      |    $1 |
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">There must be at least 3 dashes separating each header cell.
+</span></span><span class="line"><span class="cl">The outer pipes (|) are optional, and you don&#39;t need to make the 
+</span></span><span class="line"><span class="cl">raw Markdown line up prettily. You can also use inline Markdown.
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Markdown | Less | Pretty
+</span></span><span class="line"><span class="cl">     --- | --- | ---
+</span></span><span class="line"><span class="cl"> <span class="ge">*Still*</span> | <span class="sb">`renders`</span> | <span class="gs">**nicely**</span>
+</span></span><span class="line"><span class="cl">        1 | 2 | 3
+</span></span></code></pre></div><p>Colons can be used to align columns.</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<p>There must be at least 3 dashes separating each header cell.
+The outer pipes (|) are optional, and you don&rsquo;t need to make the
+raw Markdown line up prettily. You can also use inline Markdown.</p>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><code>renders</code></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h3 id="blockquotes">Blockquotes</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl"><span class="k"> &gt; </span><span class="ge">Blockquotes are very handy in email to emulate reply text.
+</span></span></span><span class="line"><span class="cl"><span class="ge"></span><span class="k"> &gt; </span><span class="ge">This line is part of the same quote.
+</span></span></span></code></pre></div><blockquote>
+<p>Blockquotes are very handy in email to emulate reply text.
+This line is part of the same quote.</p>
+</blockquote>
+<h3 id="horizontal-rule">Horizontal Rule</h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-markdown" data-lang="markdown"><span class="line"><span class="cl">Three or more...
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">---
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Hyphens
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="ge">**</span>*
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Asterisks
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">___
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Underscores  
+</span></span></code></pre></div><p>Three or more&hellip;</p>
+<hr>
+<p>Hyphens</p>
+<hr>
+<p>Asterisks</p>
+<hr>
+<p>Underscores</p>
+
+      </article>
+
+       
+      <p class="post-meta">Теги:&nbsp;
+        
+            
+            <a href="../../tags/markdown">markdown</a>
+        
+      </p>
+       
+
+      
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="../../index.xml"></a>
+
+</nav>
+
+          <small>
+              Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> Copyright &#169; 2021<br>
+
+
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+
+
+

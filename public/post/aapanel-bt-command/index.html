@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Команды bt в aaPanel - Coder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <link rel="canonical" href="../../post/aapanel-bt-command/">
+
+  
+  
+  <link rel="stylesheet" type="text/css" href="../../css/basscss.min.css">
+
+  <link rel="stylesheet" type="text/css" href="../../css/main.min.css" id="theme">
+  <link rel="stylesheet" type="text/css" href="../../css/chroma.css">
+  
+  
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;900&display=swap" rel="stylesheet">
+
+  
+
+
+</head>
+<body>
+
+<div class="site-wrap">
+  <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+
+        
+        <a href="../../">Coder</a>
+        
+
+      <nav class="site-nav right"> <a href="../../about/">О себе</a>
+<a href="../../tags/">Теги</a>
+<a href="../../contact/">Контакты</a>
+
+
+
+<span class="lang-top">
+
+
+<a title="Русский" href="../../">Eng</a>
+
+
+</span>
+
+
+
+
+          
+          <button class="btnTheme" id="btnTheme"><img src="../../images/moon.png" alt=""></button>
+
+      </nav>
+
+      <div class="clearfix">/*заметки программиста*/</div>
+    </div>
+  </div>
+
+</header>
+
+
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+      <div class="post-header mb2">
+        <h1 class="py2">Команды bt в aaPanel</h1> 
+        
+        <span class="post-meta">27.06.2022  </span><br>
+        
+      </div>
+
+      <article class="post-content">
+      <h3 id="aapanel-management-script">aaPanel Management script</h3>
+<p>Stop</p>
+<p><code>service bt stop</code></p>
+<p>Start</p>
+<p><code>service bt start</code></p>
+<p>Restart</p>
+<p><code>service bt restart</code></p>
+<p>Uninstall</p>
+<p><code>service bt stop &amp;&amp; chkconfig --del bt &amp;&amp; rm -f /etc/init.d/bt &amp;&amp; rm -rf /www/server/panel</code></p>
+<p>View current port of control panel</p>
+<p><code>cat /www/server/panel/data/port.pl</code></p>
+<p>Change port of control panel，e.g. 8881（centos 6 Operation System）</p>
+<p><code>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; service bt restart iptables -I INPUT -p tcp -m state --state NEW -m tcp --dport 8881 -j ACCEPT service iptables save service iptables restart</code></p>
+<p>Change port of control panel，e.g. 8881（centos 7 Operation System）</p>
+<p><code>echo '8881' &gt; /www/server/panel/data/port.pl &amp;&amp; service bt restart firewall-cmd --permanent --zone=public --add-port=8881/tcp firewall-cmd --reload</code></p>
+<p>Force to change MySQL manager (root) Password，e.g. 123456</p>
+<p><code>cd /www/server/panel &amp;&amp; python tools.py root 123456</code></p>
+<p>Change control Panel login password，e.g. 123456</p>
+<p><code>cd /www/server/panel &amp;&amp; python tools.py panel 123456</code></p>
+<p>Site Configuration location</p>
+<p><code>/www/server/panel/vhost</code></p>
+<p>Delete banding domain of control panel</p>
+<p><code>rm -f /www/server/panel/data/domain.conf</code></p>
+<p>Clean login restriction</p>
+<p><code>rm -f /www/server/panel/data/*.login</code></p>
+<p>View control panel authorization IP</p>
+<p><code>cat /www/server/panel/data/limitip.conf</code></p>
+<p>Stop access restriction</p>
+<p><code>rm -f /www/server/panel/data/limitip.conf</code></p>
+<p>View permission domain</p>
+<p><code>cat /www/server/panel/data/domain.conf</code></p>
+<p>Turn off control panel SSL</p>
+<p><code>rm -f /www/server/panel/data/ssl.pl &amp;&amp; /etc/init.d/bt restart</code></p>
+<p>View control panel error logs</p>
+<p><code>cat /tmp/panelBoot</code></p>
+<p>View database error log</p>
+<p><code>cat /www/server/data/*.err</code></p>
+<p>Site Configuration directory(nginx)</p>
+<p><code>/www/server/panel/vhost/nginx</code></p>
+<p>Site Configuration directory(apache)</p>
+<p><code>/www/server/panel/vhost/apache</code></p>
+<p>Site default directory</p>
+<p><code>/www/wwwroot</code></p>
+<p>Database backup directory</p>
+<p><code>/www/backup/database</code></p>
+<p>Site backup directory</p>
+<p><code>/www/backup/site</code></p>
+<p>Site logs</p>
+<p><code>/www/wwwlogs</code></p>
+<h3 id="nginx">Nginx</h3>
+<p>nginx installation directory</p>
+<p><code>/www/server/nginx</code></p>
+<p>Start</p>
+<p><code>service nginx start</code></p>
+<p>Stop</p>
+<p><code>service nginx stop</code></p>
+<p>Restart</p>
+<p><code>service nginx restart</code></p>
+<p>Reload</p>
+<p><code>service nginx reload</code></p>
+<p>nginx Configuration</p>
+<p><code>/www/server/nginx/conf/nginx.conf</code></p>
+<h3 id="apache">Apache</h3>
+<p>apache installation directory</p>
+<p><code>/www/server/httpd</code></p>
+<p>Start</p>
+<p><code>service httpd start</code></p>
+<p>Stop</p>
+<p><code>service httpd stop</code></p>
+<p>Restart</p>
+<p><code>service httpd restart</code></p>
+<p>Reload</p>
+<p><code>service httpd reload</code></p>
+<p>apache Configuration</p>
+<p><code>/www/server/apache/conf/httpd.conf</code></p>
+<h3 id="mysql">MySQL</h3>
+<p>mysql installation directory</p>
+<p><code>/www/server/mysql</code></p>
+<p>phpmyadmin installation directory</p>
+<p><code>/www/server/phpmyadmin</code></p>
+<p>Data storage directory</p>
+<p><code>/www/server/data mysql</code></p>
+<p>Start</p>
+<p><code>service mysqld start</code></p>
+<p>Stop</p>
+<p><code>service mysqld stop</code></p>
+<p>Restart</p>
+<p><code>service mysqld restart</code></p>
+<p>Reload</p>
+<p><code>service mysqld reload</code></p>
+<p>mysql Configuration</p>
+<p><code>/etc/my.cnf</code></p>
+<h3 id="ftp">FTP</h3>
+<p>ftp installation directory</p>
+<p><code>/www/server/pure-ftpd</code></p>
+<p>Start</p>
+<p><code>service pure-ftpd start</code></p>
+<p>Stop</p>
+<p><code>service pure-ftpd stop</code></p>
+<p>Restart</p>
+<p><code>service pure-ftpd restart</code></p>
+<p>ftp Configuration</p>
+<p><code>/www/server/pure-ftpd/etc/pure-ftpd</code></p>
+<h3 id="php">PHP</h3>
+<p>php installation directory</p>
+<p><code>/www/server/php</code></p>
+<p>Start(Please modify by PHP version, e.g. service php-fpm-54 start)</p>
+<p><code>servicephp-fpm-{52|53|54|55|56|70|71|72|73|74|80|81} start</code></p>
+<p>Stop(Please modify by PHP version, e.g. service php-fpm-54 stop)</p>
+<p><code>service php-fpm-{52|53|54|55|56|70|71|72|73|74|80|81} stop</code></p>
+<p>Restart(Please modify by PHP version, e.g. service php-fpm-54 restart)</p>
+<p><code>service php-fpm-{52|53|54|55|56|70|71|72|73|74|80|81} restart</code></p>
+<p>Reload(Please modify by PHP version, e.g. service php-fpm-54 reload)</p>
+<p><code>service php-fpm-{52|53|54|55|56|70|71|72|73|74|80|81} reload</code></p>
+<p>Configuration(Please modify by PHP version, e.g. /www/server/php/52/etc/php.ini)</p>
+<p><code>/www/server/php/{52|53|54|55|56|70|71|72|73|74|80|81}/etc/php.ini</code></p>
+<h3 id="redis">Redis</h3>
+<p>redis installation directory</p>
+<p><code>/www/server/redis</code></p>
+<p>Start</p>
+<p><code>service redis start</code></p>
+<p>Stop</p>
+<p><code>service redis stop</code></p>
+<p>redis Configuration</p>
+<p><code>/www/server/redis/redis.conf</code></p>
+<h3 id="memcached">Memcached</h3>
+<p>memcached installation directory</p>
+<p><code>/usr/local/memcached</code></p>
+<p>Start</p>
+<p><code>service memcached start</code></p>
+<p>Stop</p>
+<p><code>service memcached stop</code></p>
+<p>Restart</p>
+<p><code>service memcached restart</code></p>
+<p>Reload</p>
+<p><code>service memcached reload</code></p>
+
+      </article>
+
+       
+      <p class="post-meta">Теги:&nbsp;
+        
+            
+            <a href="../../tags/aaPanel">aaPanel</a>
+        
+      </p>
+       
+
+      
+
+    </div>
+  </div>
+</div>
+    <footer class="footer">
+      <div class="p2 wrap">
+        <div class="measure mt1 center">
+      <nav class="social-icons icons">
+<a class="fa fa-rss rss" href="../../index.xml"></a>
+
+</nav>
+
+          <small>
+              Powered by <a href="http://gohugo.io/" target="_blank">Hugo</a> Copyright &#169; 2021<br>
+
+
+          </small>
+        </div>
+      </div>
+    </footer>
+
+    
+    
+    <script src="../../js/main.js"></script>
+</body>
+</html>
+
+
+
