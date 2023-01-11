@@ -1,0 +1,24 @@
+<header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+<!--      <a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}" class="site-title">{{ .Site.Title }}</a>-->
+        {{ if eq .Site.Language.Lang "en" }}
+        <a href="/en">{{ .Site.Title }}</a>
+        {{ else }}
+        <a href="/">{{ .Site.Title }}</a>
+        {{ end }}
+
+      <nav class="site-nav right"> {{ partial "navigation.html" . }}
+
+          <!--DARCK MODE-->
+          <button class="btnTheme" id="btnTheme"><img src="/images/moon.png" alt=""></button>
+
+      </nav>
+<!--      <div class="baner_top">&nbsp;&nbsp;&nbsp;&nbsp;Банер</div>-->
+      <div class="clearfix">/*{{ i18n "signature" }}*/</div>
+    </div>
+  </div>
+
+</header>
+
+

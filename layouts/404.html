@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+<div class="site-wrap">
+  {{ partial "header.html" . }}
+
+  <div class="post p2 p-responsive wrap" role="main">
+    <div class="measure">
+        <div align="center">
+            <img src="{{ .Site.BaseURL }}/images/404.jpg" />dsdsd
+        </div>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}
+
+{{ define "main"}}
+<main id="main">
+    <div>
+        <h1 id="title"><a href="{{ "/" | relURL }}">Go Home</a></h1>
+    </div>
+</main>
+{{ end }}
+

@@ -1,0 +1,25 @@
+<a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}/about/">{{ i18n "about" }}</a>
+<a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}/tags/">{{ i18n "tags" }}</a>
+<a href="{{ .Site.BaseURL }}{{ .Site.LanguagePrefix }}/contact/">{{ i18n "contact" }}</a>
+
+
+<!--LENG-->
+<span class="lang-top">
+{{ if .IsTranslated }}
+{{ range .Translations }}
+{{ if eq .Site.Language.Lang "ru" }}
+<a title="English" href="{{ .RelPermalink }}">Русс</a>
+{{ else }}
+<a title="Russ" href="{{ .RelPermalink }}">Eng</a>
+{{ end }}
+{{ end }}
+{{ else }}
+{{ if eq .Site.Language.Lang "en" }}
+<a title="English" href="/en">Русс</a>
+{{ else }}
+<a title="Русский" href="/">Eng</a>
+{{ end }}
+{{ end }}
+</span>
+<!--END LENG-->
+

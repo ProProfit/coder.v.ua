@@ -1,0 +1,29 @@
+[about]
+other = "О себе"
+
+[contact]
+other = "Контакты"
+
+[tags]
+other = "Теги"
+
+[search]
+other = "Поиск"
+
+[written]
+other = "Написал"
+
+[newer]
+other = "Следующая"
+
+[older]
+other = "Предыдущая"
+
+[source]
+other = "источник:"
+
+[by]
+other = "автор:"
+
+[signature]
+other = "заметки программиста"

@@ -1,0 +1,7 @@
+name = "pixyll"
+description = ""
+author = "ProCoder"
+license = "MIT"
+source_repo = ""
+tags = ["blog", "personal", "search", "responsive", "minimal"]
+min_version = 0.25
